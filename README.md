@@ -1,6 +1,6 @@
 # Web del proyecto CONCERTO (PID2021-127221OB-I00)
 
-Página estática, biligüe (ES/EN), del proyecto CONCERTO — TaISLab, Universidad de Málaga. Construida a partir de `Especificacion_web_proyecto_CONCERTO.md` (documento de encargo).
+Página estática, biligüe (ES/EN), del proyecto CONCERTO — TaISLab, Universidad de Málaga.
 
 ## Estructura
 
