@@ -184,6 +184,15 @@ section.alt { background: var(--color-bg-alt); }
   margin-bottom: 1.25rem;
 }
 .funding-logos img { height: 70px; width: auto; }
+.funding-logos img.funding-logos-combined {
+  height: auto;
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: #fff;
+}
+.site-footer .funding-logos img.funding-logos-combined { border-color: rgba(255,255,255,0.25); }
 .funding-text {
   font-size: 0.95rem;
   color: var(--color-text-muted);

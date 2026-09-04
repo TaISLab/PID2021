@@ -1,13 +1,13 @@
-# Logos oficiales pendientes de sustituir
+# Logos del bloque de financiación
 
-Los tres ficheros siguientes son **placeholders** (recuadros con el nombre del organismo) y deben sustituirse por los ficheros oficiales antes de publicar la página, por obligación de la normativa de publicidad de la AEI (ver `Especificacion_web_proyecto_CONCERTO.md`, apartado 1.1).
+`financiacion-logos-web.jpg` es el fichero usado por `index.html` (cabecera y pie de página). Es una versión redimensionada (2400 px de ancho, ~125 KB) del original subido por el usuario, para no servir 3,5 MB en cada carga de página.
 
-| Fichero a sustituir | Organismo | Dónde conseguir el oficial |
-|---|---|---|
-| `miciu-logo.svg` | Ministerio de Ciencia, Innovación y Universidades (MICIU) | Identidad corporativa del ministerio (solicitar al servicio de comunicación de la UMA/OTRI o descargar desde la sede del ministerio) |
-| `ue-emblema.svg` | Emblema de la Unión Europea | https://european-union.europa.eu/principles-countries-history/symbols/european-flag_en (Download Centre / visual identity) |
-| `aei-logo.svg` | Agencia Estatal de Investigación (AEI) | https://www.aei.gob.es/ayudas-concedidas/comunicacion-publicidad-ayudas-concedidas (instrucciones y logotipos oficiales) |
+`MICIU+Cofinanciado+AEI.jpg` es el fichero original tal cual se subió (15237×2953 px, ~3,5 MB): imagen oficial combinada con los tres logos en el orden exigido por la normativa AEI (MICIU, emblema UE con el texto "Cofinanciado por la Unión Europea", AEI). Se conserva en el repositorio sin modificar como referencia de alta resolución (útil, por ejemplo, para materiales impresos o como evidencia de la versión original para la justificación).
 
-**Importante:** esta sesión de trabajo no ha podido descargar los ficheros oficiales porque el acceso saliente a internet estaba restringido a un conjunto limitado de dominios (los sitios `aei.gob.es` y `wikimedia.org`, entre otros, estaban bloqueados por la política de red del entorno). Los tres SVG que hay ahora mismo en esta carpeta son solo maquetación provisional (recuadro punteado + texto), **no logos reales**, y no deben usarse en la versión publicada.
+Si en el futuro se dispone de los tres logos por separado (en vez de la imagen combinada), se puede sustituir `financiacion-logos-web.jpg` por tres `<img>` independientes en `index.html` con su propio texto alternativo:
 
-Mantened el mismo nombre de fichero al sustituirlos para que `index.html` no necesite cambios, o actualizad las rutas en `index.html` (bloque `<div class="funding-logos">`, aparece dos veces: cabecera y pie de página).
+- "Ministerio de Ciencia, Innovación y Universidades"
+- "Cofinanciado por la Unión Europea"
+- "Agencia Estatal de Investigación"
+
+Mientras se use la imagen combinada, el texto alternativo (atributo `alt`) de `index.html` los recoge a los tres juntos, separados por guiones largos, para cumplir el requisito de accesibilidad del documento de encargo.
