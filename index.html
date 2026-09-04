@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es" data-active-lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONCERTO (PID2021-127221OB-I00) · TaISLab, Universidad de Málaga</title>
+<meta name="description" content="CONCERTO — Control Colaborativo para Interacción física Empática entre RoboT y humanO. Proyecto PID2021-127221OB-I00, financiado por MICIU/AEI/10.13039/501100011033/FEDER, UE. TaISLab, Universidad de Málaga.">
+<!-- Canonical URL provisional: fijar la definitiva y no cambiarla (ver assets/logos/README.md y notas de implementación del encargo). -->
+<link rel="canonical" href="https://taislab.uma.es/projects/concerto">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchProject",
+  "name": "CONCERTO: Control Colaborativo para Interacción física Empática entre RoboT y humanO",
+  "alternateName": "CONCERTO",
+  "identifier": "PID2021-127221OB-I00",
+  "description": "El proyecto CONCERTO ha desarrollado interfaces físicas que permiten a un robot agarrar de forma segura las extremidades de una persona, junto con un sistema de percepción sin marcadores y un control compartido humano-robot, validados en un demostrador transportable para rehabilitación física.",
+  "url": "https://taislab.uma.es/projects/concerto",
+  "startDate": "2022-09-01",
+  "endDate": "2026-06-30",
+  "keywords": ["physical human-robot interaction", "pHRI", "shared control", "robotic rehabilitation", "compliant gripper", "markerless pose estimation"],
+  "provider": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad de Málaga",
+    "department": "Escuela de Ingenierías Industriales / IMECH.UMA"
+  },
+  "funder": [
+    {
+      "@type": "GovernmentOrganization",
+      "name": "Agencia Estatal de Investigación",
+      "identifier": "https://doi.org/10.13039/501100011033"
+    },
+    {
+      "@type": "GovernmentOrganization",
+      "name": "Ministerio de Ciencia, Innovación y Universidades"
+    },
+    {
+      "@type": "Organization",
+      "name": "Fondo Europeo de Desarrollo Regional (FEDER), Unión Europea"
+    }
+  ],
+  "sameAs": ["https://github.com/TaISLab"]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido / Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#contenido">TaISLab · CONCERTO</a>
+    <nav class="site-nav" aria-label="Navegación principal / Main navigation">
+      <ul>
+        <li><a href="#resumen" data-lang="es">Resumen</a><a href="#resumen" data-lang="en">Summary</a></li>
+        <li><a href="#objetivos" data-lang="es">Objetivos</a><a href="#objetivos" data-lang="en">Objectives</a></li>
+        <li><a href="#publicaciones" data-lang="es">Publicaciones</a><a href="#publicaciones" data-lang="en">Publications</a></li>
+        <li><a href="#codigo-datos" data-lang="es">Código y datos</a><a href="#codigo-datos" data-lang="en">Code &amp; data</a></li>
+        <li><a href="#demostrador" data-lang="es">Demostrador</a><a href="#demostrador" data-lang="en">Demonstrator</a></li>
+        <li><a href="#equipo" data-lang="es">Equipo</a><a href="#equipo" data-lang="en">Team</a></li>
+        <li><a href="#transferencia" data-lang="es">Transferencia</a><a href="#transferencia" data-lang="en">Transfer</a></li>
+        <li><a href="#financiacion" data-lang="es">Financiación</a><a href="#financiacion" data-lang="en">Funding</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Selector de idioma / Language selector">
+      <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="hero">
+    <div class="container">
+      <p class="acronym">CONCERTO</p>
+      <h1 data-lang="es">Control Colaborativo para Interacción física Empática entre RoboT y humanO</h1>
+      <h1 data-lang="en">Collaborative Control for Empathic physical Interaction between RoboT and humanO</h1>
+
+      <span class="ref-badge">PID2021-127221OB-I00</span>
+
+      <dl class="meta-grid">
+        <div>
+          <dt data-lang="es">Convocatoria</dt><dt data-lang="en">Call</dt>
+          <dd data-lang="es">Proyectos de Generación de Conocimiento 2021, Investigación Orientada. Prioridad temática: Salud</dd>
+          <dd data-lang="en">Knowledge Generation Projects 2021, Oriented Research. Thematic priority: Health</dd>
+        </div>
+        <div>
+          <dt data-lang="es">Periodo de ejecución</dt><dt data-lang="en">Project period</dt>
+          <dd>01/09/2022 – 30/06/2026</dd>
+        </div>
+        <div>
+          <dt data-lang="es">Entidad</dt><dt data-lang="en">Institution</dt>
+          <dd data-lang="es">Universidad de Málaga, Escuela de Ingenierías Industriales / IMECH.UMA</dd>
+          <dd data-lang="en">University of Málaga, School of Industrial Engineering / IMECH.UMA</dd>
+        </div>
+        <div>
+          <dt data-lang="es">Investigadores principales</dt><dt data-lang="en">Principal investigators</dt>
+          <dd>
+            <ul class="pi-list">
+              <li>Jesús Manuel Gómez de Gabriel — <a href="https://orcid.org/0000-0001-5960-3453">ORCID 0000-0001-5960-3453</a></li>
+              <li>Amalia Cristina Urdiales García — <a href="https://orcid.org/0000-0002-9251-6447">ORCID 0000-0002-9251-6447</a></li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="financiacion" class="alt">
+    <div class="container">
+      <h2 data-lang="es">Financiación</h2>
+      <h2 data-lang="en">Funding</h2>
+      <div class="funding-block">
+        <div class="funding-logos">
+          <img class="funding-logos-combined" src="assets/logos/financiacion-logos-web.jpg" alt="Ministerio de Ciencia, Innovación y Universidades — Cofinanciado por la Unión Europea — Agencia Estatal de Investigación">
+        </div>
+        <div class="funding-text">
+          <p data-lang="es">Referencia del proyecto: <strong>PID2021-127221OB-I00</strong></p>
+          <p data-lang="en">Project reference: <strong>PID2021-127221OB-I00</strong></p>
+          <code>Este proyecto es parte del proyecto PID2021-127221OB-I00, financiado por MICIU/AEI/10.13039/501100011033/FEDER, UE</code>
+          <p data-lang="es">Esta mención de financiación acompaña a todos los resultados y publicaciones del proyecto listados en esta página.</p>
+          <p data-lang="en">This funding acknowledgement accompanies all the project's results and publications listed on this page (original wording kept in Spanish, as required by the funding agency).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resumen">
+    <div class="container">
+      <h2 data-lang="es">Resumen para difusión pública</h2>
+      <h2 data-lang="en">Public summary</h2>
+
+      <div data-lang="es">
+        <p>El proyecto CONCERTO ha desarrollado interfaces físicas que permiten a un robot agarrar de forma segura las extremidades de una persona, ya sea como efector final integrado en un brazo robótico o como dispositivo independiente. Para ello se ha creado un sistema de percepción capaz de determinar no solo dónde se encuentra el extremo del brazo de una persona, sino también su postura completa y la posición de sus articulaciones, sin necesidad de marcadores y a pesar de las oclusiones visuales que provoca el propio robot al aproximarse y agarrar la extremidad.</p>
+        <p>Esta información se utiliza en un nuevo sistema de control compartido que tiene en cuenta simultáneamente los límites articulares de la persona —evitando forzar sus articulaciones— y las limitaciones mecánicas del robot, evitando posiciones y direcciones de fuerza en las que el sistema no puede responder con seguridad. Estos avances se han validado en un demostrador transportable orientado a aplicaciones de rehabilitación física.</p>
+        <p>Adicionalmente, la colaboración con el servicio de cirugía ortopédica surgida durante el diseño de estas aplicaciones ha dado lugar a un prototipo y una patente para reducir el índice de fracaso de las intervenciones de reemplazo de prótesis de rodilla por infecciones, con un impacto potencial relevante en el sistema asistencial.</p>
+      </div>
+      <div data-lang="en">
+        <p>The CONCERTO project has developed physical interfaces that allow a robot to safely grasp a person's limbs, either as an end-effector integrated into a robotic arm or as a stand-alone device. To this end, a perception system has been created that can determine not only where a person's arm is located, but also their full posture and joint positions, without the need for markers and despite the visual occlusions caused by the robot itself as it approaches and grasps the limb.</p>
+        <p>This information is used in a new shared control system that simultaneously accounts for the person's joint limits — avoiding forcing their joints — and the robot's mechanical limitations, avoiding positions and force directions in which the system cannot respond safely. These advances have been validated on a transportable demonstrator aimed at physical rehabilitation applications.</p>
+        <p>In addition, the collaboration with the orthopaedic surgery department that arose during the design of these applications has led to a prototype and a patent aimed at reducing the failure rate of knee replacement surgery due to infection, with a potentially significant impact on the healthcare system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="objetivos" class="alt">
+    <div class="container">
+      <h2 data-lang="es">Objetivos</h2>
+      <h2 data-lang="en">Objectives</h2>
+      <div class="objectives-grid">
+        <div class="objective-card">
+          <span class="obj-tag">O1</span>
+          <p data-lang="es">Garra subactuada de cuatro dedos con capacidades propioceptivas para el agarre seguro de extremidades humanas.</p>
+          <p data-lang="en">Underactuated four-finger gripper with proprioceptive capabilities for the safe grasping of human limbs.</p>
+        </div>
+        <div class="objective-card">
+          <span class="obj-tag">O2</span>
+          <p data-lang="es">Sistema de percepción que combina visión multicámara e información propioceptiva de la garra para estimar la postura del brazo sin marcadores.</p>
+          <p data-lang="en">Perception system combining multi-camera vision and proprioceptive information from the gripper to estimate arm posture without markers.</p>
+        </div>
+        <div class="objective-card">
+          <span class="obj-tag">O3</span>
+          <p data-lang="es">Control compartido que pondera la contribución de humano y robot y respeta los límites articulares de la persona y las singularidades del manipulador.</p>
+          <p data-lang="en">Shared control that weighs the human and robot contributions and respects the person's joint limits and the manipulator's singularities.</p>
+        </div>
+        <div class="objective-card">
+          <span class="obj-tag">O4</span>
+          <p data-lang="es">Demostrador transportable orientado a aplicaciones de rehabilitación.</p>
+          <p data-lang="en">Transportable demonstrator aimed at rehabilitation applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publicaciones">
+    <div class="container">
+      <h2 data-lang="es">Publicaciones</h2>
+      <h2 data-lang="en">Publications</h2>
+      <ol class="pub-list">
+        <li>
+          Ruiz-Ruiz, F.J.; Urdiales, C.; Gómez-de-Gabriel, J.M. <em>Estimation of the Interaction Forces in a Compliant pHRI Gripper.</em> Machines, 2022, 10(12), 1128.
+          <span class="pub-status" data-lang="es">Publicada</span><span class="pub-status" data-lang="en">Published</span>
+        </li>
+        <li>
+          Ruiz-Ruiz, F.J.; Ventura, J.; Urdiales, C.; Gómez-de-Gabriel, J.M. <em>Compliant gripper with force estimation for physical human–robot interaction.</em> Mechanism and Machine Theory, 2022, 178, 105062. DOI: <a href="https://doi.org/10.1016/j.mechmachtheory.2022.105062">10.1016/j.mechmachtheory.2022.105062</a>
+          <span class="pub-status" data-lang="es">Publicada</span><span class="pub-status" data-lang="en">Published</span>
+        </li>
+        <li>
+          Tobar-Subía-Contento, L.M.; Mandow, A.; Gómez-de-Gabriel, J.M. <em>Open On-Limb Robot Locomotion Mechanism with Spherical Rollers and Diameter Adaptation.</em> Machines, 2024, 12(7), 455. DOI: <a href="https://doi.org/10.3390/machines12070455">10.3390/machines12070455</a>
+          <span class="pub-status" data-lang="es">Publicada</span><span class="pub-status" data-lang="en">Published</span>
+        </li>
+        <li>
+          Tobar-Subía-Contento, L.M.; Cabrera, J.A.; Mandow, A.; Gómez-de-Gabriel, J.M. <em>On-Limb Orbiting Robot: Proprioceptive Diameter Estimation and Orthogonal Grip–Orbit Control.</em> Biomimetics (MDPI).
+          <span class="pub-status" data-lang="es">Aceptada</span><span class="pub-status" data-lang="en">Accepted</span>
+        </li>
+        <li>
+          Tobar-Subía-Contento, L.M.; Valenzuela, J.; Mandow, A.; Gómez-de-Gabriel, J.M. <em>Actively Steered Open On-Limb Robot with Alignment Control and Online Diameter Estimation.</em> Electronics (MDPI).
+          <span class="pub-status" data-lang="es">Aceptada</span><span class="pub-status" data-lang="en">Accepted</span>
+        </li>
+        <li>
+          Castro, R.; Fernández-Carmona, M.; Urdiales, C.; Arévalo, V.; Gómez-de-Gabriel, J.M. <em>Robust Visuo-Proprioceptive State Estimation for Direct pHRI under Robot-Induced Occlusions.</em> ACM Transactions on Human-Robot Interaction.
+          <span class="pub-status pending" data-lang="es">En revisión</span><span class="pub-status pending" data-lang="en">Under review</span>
+        </li>
+        <li>
+          Castro, R.; Urdiales, C.; Fernández-Carmona, M.; Gómez-de-Gabriel, J.M. <em>Human Joint-Limit- and Robot Singularity-Aware Shared Control for Upper-Limb Rehabilitation.</em> IEEE Robotics and Automation Letters.
+          <span class="pub-status pending" data-lang="es">En preparación</span><span class="pub-status pending" data-lang="en">In preparation</span>
+        </li>
+      </ol>
+      <p class="conf-note" data-lang="es">Congresos destacados: ROBOT 2023 y 2024, IWANN 2023, UCAmI 2023, Jornadas de Automática 2023 y 2024, IEEE ICORR 2025 (Chicago), demostrador en IEEE ICRA@40 (Rotterdam, 2024) y Foro Transfiere 2024.</p>
+      <p class="conf-note" data-lang="en">Selected conferences: ROBOT 2023 and 2024, IWANN 2023, UCAmI 2023, Jornadas de Automática 2023 and 2024, IEEE ICORR 2025 (Chicago), demonstrator at IEEE ICRA@40 (Rotterdam, 2024) and Transfiere Forum 2024.</p>
+      <p class="conf-note" data-lang="es">Todas las publicaciones anteriores reconocen la financiación del proyecto PID2021-127221OB-I00 (MICIU/AEI/10.13039/501100011033/FEDER, UE).</p>
+      <p class="conf-note" data-lang="en">All the publications above acknowledge funding from project PID2021-127221OB-I00 (MICIU/AEI/10.13039/501100011033/FEDER, UE).</p>
+    </div>
+  </section>
+
+  <section id="codigo-datos" class="alt">
+    <div class="container">
+      <h2 data-lang="es">Código y datos abiertos</h2>
+      <h2 data-lang="en">Open code &amp; data</h2>
+
+      <div class="repo-groups">
+        <div class="repo-group">
+          <h3 data-lang="es">Garras y efectores para pHRI</h3>
+          <h3 data-lang="en">Grippers and end-effectors for pHRI</h3>
+          <ul class="repo-chips">
+            <li><a href="https://github.com/TaISLab/pHRI-Hand-4F-Compliant">pHRI-Hand-4F-Compliant</a></li>
+            <li><a href="https://github.com/TaISLab/pHRI-Hand-3F-PressureSensing">pHRI-Hand-3F-PressureSensing</a></li>
+            <li><a href="https://github.com/TaISLab/pHRI-Fingers-FrankaHand">pHRI-Fingers-FrankaHand</a></li>
+            <li><a href="https://github.com/TaISLab/rolling_fingers_gripper">rolling_fingers_gripper</a></li>
+            <li><a href="https://github.com/TaISLab/umahand">umahand</a></li>
+            <li><a href="https://github.com/TaISLab/Dummy-Arm">Dummy-Arm</a></li>
+          </ul>
+        </div>
+        <div class="repo-group">
+          <h3 data-lang="es">Percepción y demostrador</h3>
+          <h3 data-lang="en">Perception and demonstrator</h3>
+          <ul class="repo-chips">
+            <li><a href="https://github.com/TaISLab/pHRI-Vision-Robot-Workstation">pHRI-Vision-Robot-Workstation</a></li>
+            <li><a href="https://github.com/TaISLab/franka_ros_uma">franka_ros_uma</a></li>
+            <li><a href="https://github.com/TaISLab/joy_franka_control">joy_franka_control</a></li>
+            <li><a href="https://github.com/TaISLab/witmotion_IMU_ros">witmotion_IMU_ros</a></li>
+            <li><a href="https://github.com/TaISLab/e4_msgs">e4_msgs</a></li>
+          </ul>
+        </div>
+        <div class="repo-group">
+          <h3 data-lang="es">Robots sobre extremidades</h3>
+          <h3 data-lang="en">On-limb robots</h3>
+          <ul class="repo-chips">
+            <li><a href="https://github.com/TaISLab/Open-limb-robot">Open-limb-robot</a></li>
+          </ul>
+        </div>
+        <div class="repo-group">
+          <h3 data-lang="es">Monitorización de andadores</h3>
+          <h3 data-lang="en">Walker monitoring</h3>
+          <ul class="repo-chips">
+            <li><a href="https://github.com/TaISLab/WalKit">WalKit</a></li>
+          </ul>
+        </div>
+        <div class="repo-group">
+          <h3 data-lang="es">Control compartido</h3>
+          <h3 data-lang="en">Shared control</h3>
+          <ul class="repo-chips">
+            <li><span class="pending-tag" data-lang="es">sc_human_robot_joints (pendiente de hacerse público)</span><span class="pending-tag" data-lang="en">sc_human_robot_joints (pending public release)</span></li>
+          </ul>
+        </div>
+        <div class="repo-group">
+          <h3>Datasets</h3>
+          <p data-lang="es">Los conjuntos de datos del proyecto se publican en Zenodo con licencia CC BY 4.0. En cuanto esté disponible, la comunidad Zenodo del laboratorio se enlazará aquí como punto único de acceso.</p>
+          <p data-lang="en">The project's datasets are published on Zenodo under a CC BY 4.0 licence. Once available, the lab's Zenodo community will be linked here as a single point of access.</p>
+        </div>
+      </div>
+      <p class="conf-note" data-lang="es">Todos los repositorios pertenecen a la organización <a href="https://github.com/TaISLab">github.com/TaISLab</a>.</p>
+      <p class="conf-note" data-lang="en">All repositories belong to the <a href="https://github.com/TaISLab">github.com/TaISLab</a> organisation.</p>
+    </div>
+  </section>
+
+  <section id="demostrador">
+    <div class="container">
+      <h2 data-lang="es">Demostrador</h2>
+      <h2 data-lang="en">Demonstrator</h2>
+
+      <div class="media-placeholder">
+        <p data-lang="es"><strong>Vídeo de presentación del proyecto — próximamente</strong><br>Entregable E5.3, pendiente de grabación.</p>
+        <p data-lang="en"><strong>Project presentation video — coming soon</strong><br>Deliverable E5.3, recording pending.</p>
+      </div>
+
+      <div class="gallery-placeholder">
+        <div class="ph"><span data-lang="es">Foto del demostrador — pendiente</span><span data-lang="en">Demonstrator photo — pending</span></div>
+        <div class="ph"><span data-lang="es">Foto de la garra — pendiente</span><span data-lang="en">Gripper photo — pending</span></div>
+        <div class="ph"><span data-lang="es">Foto del sistema de percepción — pendiente</span><span data-lang="en">Perception system photo — pending</span></div>
+      </div>
+      <p class="conf-note" data-lang="es">Nota: todas las imágenes y vídeos que se publiquen deberán revisarse para no mostrar el rostro de los participantes, conforme al protocolo aprobado por el CEUMA.</p>
+      <p class="conf-note" data-lang="en">Note: all published images and videos must be reviewed to ensure participants' faces are not shown, in accordance with the protocol approved by the CEUMA ethics committee.</p>
+    </div>
+  </section>
+
+  <section id="equipo" class="alt">
+    <div class="container">
+      <h2 data-lang="es">Equipo</h2>
+      <h2 data-lang="en">Team</h2>
+
+      <div class="team-grid">
+        <div class="team-card"><span class="role" data-lang="es">Investigador principal 1</span><span class="role" data-lang="en">Principal investigator 1</span><p>Jesús M. Gómez de Gabriel</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Investigadora principal 2</span><span class="role" data-lang="en">Principal investigator 2</span><p>A. Cristina Urdiales García</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Equipo de investigación</span><span class="role" data-lang="en">Research team</span><p>Francisco García Lagos</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Equipo de investigación</span><span class="role" data-lang="en">Research team</span><p>Óscar de Cózar Macías</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Equipo de investigación</span><span class="role" data-lang="en">Research team</span><p>E. Beatriz Blázquez Parra</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Equipo de investigación</span><span class="role" data-lang="en">Research team</span><p>Antonio J. Muñoz Ramírez</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Equipo de investigación</span><span class="role" data-lang="en">Research team</span><p>Enrique Guerado Parra</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Equipo de investigación</span><span class="role" data-lang="en">Research team</span><p>Manuel Fernández Carmona</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Doctorando</span><span class="role" data-lang="en">PhD student</span><p>Rodrigo Castro Ochoa</p></div>
+        <div class="team-card"><span class="role" data-lang="es">Doctoranda</span><span class="role" data-lang="en">PhD student</span><p>Luz M. Tobar-Subía-Contento</p></div>
+      </div>
+
+      <h3 data-lang="es" style="margin-top:2rem;">Colaboraciones</h3>
+      <h3 data-lang="en" style="margin-top:2rem;">Collaborations</h3>
+      <ul class="collab-list">
+        <li>Hospital Universitario Costa del Sol</li>
+        <li>MACROSAD</li>
+        <li>IMECH.UMA</li>
+        <li>University College London (Helge Wurdemann)</li>
+        <li>Shadow Robot Ltd.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="transferencia">
+    <div class="container">
+      <h2 data-lang="es">Transferencia e impacto</h2>
+      <h2 data-lang="en">Transfer &amp; impact</h2>
+
+      <div class="transfer-item">
+        <p data-lang="es"><strong>Patente ES 2 957 331 B2</strong>, <em>Dispositivo, sistema y procedimiento de activación para la desinfección intraoperatoria de prótesis óseas mediante efecto bioeléctrico</em> (concedida 18/06/2024). Finalista, tercer premio, V Premios OEPM a las Mejores Invenciones Protegidas mediante Derechos de Propiedad Industrial (2026).</p>
+        <p data-lang="en"><strong>Patent ES 2 957 331 B2</strong>, <em>Device, system and activation procedure for the intraoperative disinfection of bone prostheses using a bioelectric effect</em> (granted 18/06/2024). Finalist, third prize, 5th OEPM Awards for the Best Inventions Protected by Industrial Property Rights (2026).</p>
+      </div>
+      <div class="transfer-item">
+        <p data-lang="es">Interés empresarial de Johnson &amp; Johnson en la línea derivada de desinfección de prótesis.</p>
+        <p data-lang="en">Business interest from Johnson &amp; Johnson in the derived prosthesis-disinfection line of work.</p>
+      </div>
+      <div class="transfer-item">
+        <p data-lang="es">Proyectos derivados en solicitud: <strong>HARMONY</strong> y <strong>VERSATILE</strong> (Junta de Andalucía).</p>
+        <p data-lang="en">Follow-on projects under application: <strong>HARMONY</strong> and <strong>VERSATILE</strong> (Regional Government of Andalusia).</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <h2 data-lang="es">Financiación</h2>
+    <h2 data-lang="en">Funding</h2>
+    <div class="funding-block">
+      <div class="funding-logos">
+        <img class="funding-logos-combined" src="assets/logos/financiacion-logos-web.jpg" alt="Ministerio de Ciencia, Innovación y Universidades — Cofinanciado por la Unión Europea — Agencia Estatal de Investigación">
+      </div>
+      <div class="funding-text">
+        <code>Este proyecto es parte del proyecto PID2021-127221OB-I00, financiado por MICIU/AEI/10.13039/501100011033/FEDER, UE</code>
+        <p data-lang="es">Versión corta (solo para materiales con espacio limitado): <code>PID2021-127221OB-I00/ AEI/10.13039/501100011033/ FEDER, UE</code></p>
+        <p data-lang="en">Short version (for materials with limited space only): <code>PID2021-127221OB-I00/ AEI/10.13039/501100011033/ FEDER, UE</code></p>
+      </div>
+    </div>
+
+    <p class="contact">
+      <span data-lang="es">Contacto: </span><span data-lang="en">Contact: </span>
+      <a href="mailto:taislab@uma.es">taislab@uma.es</a> ·
+      <a href="https://taislab.uma.es">taislab.uma.es</a>
+    </p>
+
+    <p class="fine-print" data-lang="es">TaISLab, Universidad de Málaga. Página del proyecto CONCERTO (PID2021-127221OB-I00), entregable E5.1 "Espacio web del proyecto".</p>
+    <p class="fine-print" data-lang="en">TaISLab, University of Málaga. CONCERTO project page (PID2021-127221OB-I00), deliverable E5.1 "Project web space".</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
