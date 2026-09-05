@@ -261,6 +261,7 @@ section.alt { background: var(--color-bg-alt); }
   vertical-align: middle;
 }
 .pub-status.pending { background: #fdeee0; color: #a15c0d; }
+.pub-status.preprint { background: #eef1f5; color: #4a5561; }
 .conf-note { margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-muted); }
 
 /* Repos */
