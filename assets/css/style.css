@@ -107,13 +107,13 @@ a:hover { color: var(--color-primary); }
   font-weight: 600;
 }
 
-/* Language visibility */
-[data-lang="en"] { display: none; }
-html[data-active-lang="en"] [data-lang="es"] { display: none; }
-html[data-active-lang="en"] [data-lang="en"] { display: block; }
+/* Language visibility (!important: must always win over any component's own `display`) */
+[data-lang="en"] { display: none !important; }
+html[data-active-lang="en"] [data-lang="es"] { display: none !important; }
+html[data-active-lang="en"] [data-lang="en"] { display: block !important; }
 html[data-active-lang="en"] span[data-lang="en"],
-html[data-active-lang="en"] a[data-lang="en"] { display: inline; }
-html[data-active-lang="en"] li[data-lang="en"] { display: list-item; }
+html[data-active-lang="en"] a[data-lang="en"] { display: inline !important; }
+html[data-active-lang="en"] li[data-lang="en"] { display: list-item !important; }
 
 /* Hero */
 .hero {
