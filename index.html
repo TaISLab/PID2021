@@ -330,9 +330,10 @@
             <li><a href="https://github.com/TaISLab/witmotion_IMU_ros">witmotion_IMU_ros</a></li>
             <li><a href="https://github.com/TaISLab/e4_msgs">e4_msgs</a></li>
             <li><a href="https://github.com/TaISLab/proprioceptive_limb_roll">proprioceptive_limb_roll</a></li>
+            <li><a href="https://github.com/TaISLab/upper_limb_kinematics">upper_limb_kinematics</a></li>
           </ul>
-          <p data-lang="es">Sistema de percepción multicámara y propioceptiva, integración ROS con el manipulador Franka y sensorización adicional (IMU, control por mando, mensajería), usados en el demostrador transportable (objetivos O2 y O4).</p>
-          <p data-lang="en">Multi-camera and proprioceptive perception system, ROS integration with the Franka manipulator, and additional sensing (IMU, joystick control, messaging), used in the transportable demonstrator (objectives O2 and O4).</p>
+          <p data-lang="es">Sistema de percepción multicámara y propioceptiva, integración ROS con el manipulador Franka y sensorización adicional (IMU, control por mando, mensajería), usados en el demostrador transportable (objetivos O2 y O4). <code>upper_limb_kinematics</code> resuelve la cinemática inversa del brazo humano a partir del esqueleto 3D, con un modelo URDF con hombro de 3 GDL, codo y prono-supinación, publicando los ángulos articulares y el <code>JointState</code> resultante.</p>
+          <p data-lang="en">Multi-camera and proprioceptive perception system, ROS integration with the Franka manipulator, and additional sensing (IMU, joystick control, messaging), used in the transportable demonstrator (objectives O2 and O4). <code>upper_limb_kinematics</code> solves the human arm's inverse kinematics from the 3D skeleton, using a URDF model with a 3-DoF shoulder plus elbow and forearm pronation-supination, publishing the resulting joint angles and <code>JointState</code>.</p>
         </div>
         <div class="repo-group">
           <h3 data-lang="es">Maniquí de referencia instrumentado</h3>
@@ -363,14 +364,17 @@
           <p data-lang="en">Sensor kit for walkers aimed at monitoring gait and safety for people with reduced mobility.</p>
         </div>
         <div class="repo-group">
-          <h3 data-lang="es">Control compartido</h3>
-          <h3 data-lang="en">Shared control</h3>
+          <h3 data-lang="es">Control colaborativo sobre Franka FR3</h3>
+          <h3 data-lang="en">Collaborative control on the Franka FR3</h3>
           <ul class="repo-chips">
+            <li><a href="https://github.com/TaISLab/franka_concerto">franka_concerto</a></li>
+            <li><a href="https://github.com/TaISLab/Assistive_Control_FR3">Assistive_Control_FR3</a></li>
+            <li><a href="https://github.com/TaISLab/shared_control_fr3">shared_control_fr3</a></li>
             <li><a href="https://github.com/TaISLab/sc_ros_empathic">sc_ros_empathic</a></li>
             <li><a href="https://github.com/TaISLab/sc_human_robot_joints">sc_human_robot_joints</a></li>
           </ul>
-          <p data-lang="es"><code>sc_ros_empathic</code> — implementación en ROS del sistema de control empático sobre la estación de trabajo del proyecto, con percepción visual y propioceptiva y manipulador colaborativo Franka FR3. <code>sc_human_robot_joints</code> — versión simulada, sin ROS, del mismo sistema, para evaluación de estrategias y ajuste de parámetros. Ambos son las dos versiones —experimental y simulada— del entregable E3.2 (sistema de control empático). El artículo que describe el método está en preparación.</p>
-          <p data-lang="en"><code>sc_ros_empathic</code> — ROS implementation of the empathic control system on the project's workstation, with visual and proprioceptive perception and a Franka FR3 collaborative manipulator. <code>sc_human_robot_joints</code> — simulated, ROS-free version of the same system, for evaluating strategies and tuning parameters. Both are the experimental and simulated versions of deliverable E3.2 (empathic control system). The paper describing the method is in preparation.</p>
+          <p data-lang="es">De menor a mayor nivel: <code>franka_concerto</code> — servidor de movimiento con controladores de posición, velocidad e impedancia cartesiana y árbol de comportamiento. <code>Assistive_Control_FR3</code> — controladores de asistencia de bajo nivel (<code>taislab_franka_controllers</code>). <code>shared_control_fr3</code> — capa de control compartido reactivo basado en rendimiento. <code>sc_ros_empathic</code> — implementación en ROS del sistema de control empático completo sobre la estación de trabajo del proyecto, con percepción visual y propioceptiva. <code>sc_human_robot_joints</code> — versión simulada, sin ROS, del mismo sistema, para evaluación de estrategias y ajuste de parámetros. Estas dos últimas son las versiones experimental y simulada del entregable E3.2 (sistema de control empático); el artículo que describe el método está en preparación.</p>
+          <p data-lang="en">From lower to higher level: <code>franka_concerto</code> — motion server with Cartesian position, velocity and impedance controllers plus a behaviour tree. <code>Assistive_Control_FR3</code> — low-level assistive controllers (<code>taislab_franka_controllers</code>). <code>shared_control_fr3</code> — reactive, performance-based shared control layer. <code>sc_ros_empathic</code> — ROS implementation of the complete empathic control system on the project's workstation, with visual and proprioceptive perception. <code>sc_human_robot_joints</code> — simulated, ROS-free version of the same system, for evaluating strategies and tuning parameters. These last two are the experimental and simulated versions of deliverable E3.2 (empathic control system); the paper describing the method is in preparation.</p>
         </div>
         <div class="repo-group">
           <h3>Datasets</h3>
