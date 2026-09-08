@@ -10,4 +10,8 @@ Si en el futuro se dispone de los tres logos por separado (en vez de la imagen c
 - "Cofinanciado por la Unión Europea"
 - "Agencia Estatal de Investigación"
 
-Mientras se use la imagen combinada, el texto alternativo (atributo `alt`) de `index.html` los recoge a los tres juntos, separados por guiones largos, para cumplir el requisito de accesibilidad del documento de encargo.
+Mientras se use la imagen combinada, el texto alternativo (atributo `alt`) de `index.html` los recoge a los tres juntos, separados por guiones largos, por accesibilidad.
+
+## Logos institucionales
+
+`uma-logo.png` (Universidad de Málaga) y `imech-uma-logo.jpg` (IMECH.UMA) se muestran en tarjetas blancas en la cabecera de `index.html`, junto a los datos del proyecto.
