@@ -138,12 +138,12 @@
       <h2 data-lang="en">Public summary</h2>
 
       <div data-lang="es">
-        <p>El proyecto CONCERTO ha desarrollado interfaces físicas que permiten a un robot agarrar de forma segura las extremidades de una persona, ya sea como efector final integrado en un brazo robótico o como dispositivo independiente. Para ello se ha creado un sistema de percepción capaz de determinar no solo dónde se encuentra el extremo del brazo de una persona, sino también su postura completa y la posición de sus articulaciones, sin necesidad de marcadores y a pesar de las oclusiones visuales que provoca el propio robot al aproximarse y agarrar la extremidad.</p>
+        <p>El proyecto CONCERTO ha desarrollado interfaces físicas que permiten a un robot agarrar de forma segura las extremidades de una persona, ya sea como efector final integrado en un brazo robótico o como garra especializada capaz de desacoplarse de él, permanecer sujeta a la extremidad y recolocar el punto de agarre desplazándose sobre ella. Para ello se ha creado un sistema de percepción capaz de determinar no solo dónde se encuentra el extremo del brazo de una persona, sino también su postura completa y la posición de sus articulaciones, sin necesidad de marcadores y a pesar de las oclusiones visuales que provoca el propio robot al aproximarse y agarrar la extremidad.</p>
         <p>Esta información se utiliza en un nuevo sistema de control compartido que tiene en cuenta simultáneamente los límites articulares de la persona —evitando forzar sus articulaciones— y las limitaciones mecánicas del robot, evitando posiciones y direcciones de fuerza en las que el sistema no puede responder con seguridad. Estos avances se han validado en un demostrador transportable orientado a aplicaciones de rehabilitación física.</p>
         <p>Adicionalmente, la colaboración con el servicio de cirugía ortopédica surgida durante el diseño de estas aplicaciones ha dado lugar a un prototipo y una patente para reducir el índice de fracaso de las intervenciones de reemplazo de prótesis de rodilla por infecciones, con un impacto potencial relevante en el sistema asistencial.</p>
       </div>
       <div data-lang="en">
-        <p>The CONCERTO project has developed physical interfaces that allow a robot to safely grasp a person's limbs, either as an end-effector integrated into a robotic arm or as a stand-alone device. To this end, a perception system has been created that can determine not only where a person's arm is located, but also their full posture and joint positions, without the need for markers and despite the visual occlusions caused by the robot itself as it approaches and grasps the limb.</p>
+        <p>The CONCERTO project has developed physical interfaces that allow a robot to safely grasp a person's limbs, either as an end-effector integrated into a robotic arm or as a specialised gripper able to detach from it, stay attached to the limb and reposition the grasp by travelling along it. To this end, a perception system has been created that can determine not only where a person's arm is located, but also their full posture and joint positions, without the need for markers and despite the visual occlusions caused by the robot itself as it approaches and grasps the limb.</p>
         <p>This information is used in a new shared control system that simultaneously accounts for the person's joint limits — avoiding forcing their joints — and the robot's mechanical limitations, avoiding positions and force directions in which the system cannot respond safely. These advances have been validated on a transportable demonstrator aimed at physical rehabilitation applications.</p>
         <p>In addition, the collaboration with the orthopaedic surgery department that arose during the design of these applications has led to a prototype and a patent aimed at reducing the failure rate of knee replacement surgery due to infection, with a potentially significant impact on the healthcare system.</p>
       </div>
@@ -317,7 +317,6 @@
             <li><a href="https://github.com/TaISLab/pHRI-Fingers-FrankaHand">pHRI-Fingers-FrankaHand</a></li>
             <li><a href="https://github.com/TaISLab/rolling_fingers_gripper">rolling_fingers_gripper</a></li>
             <li><a href="https://github.com/TaISLab/umahand">umahand</a></li>
-            <li><a href="https://github.com/TaISLab/Dummy-Arm">Dummy-Arm</a></li>
           </ul>
         </div>
         <div class="repo-group">
@@ -330,7 +329,10 @@
             <li><a href="https://github.com/TaISLab/witmotion_IMU_ros">witmotion_IMU_ros</a></li>
             <li><a href="https://github.com/TaISLab/e4_msgs">e4_msgs</a></li>
             <li><a href="https://github.com/TaISLab/proprioceptive_limb_roll">proprioceptive_limb_roll</a></li>
+            <li><a href="https://github.com/TaISLab/Dummy-Arm">Dummy-Arm</a></li>
           </ul>
+          <p data-lang="es">Dummy-Arm es el maniquí de brazo instrumentado con sensores en las articulaciones que sirve como referencia repetible para validar la estimación de la configuración articular humana, además de para ensayar las maniobras antes de trabajar con personas.</p>
+          <p data-lang="en">Dummy-Arm is the instrumented arm mannequin, fitted with joint sensors, used as a repeatable reference to validate the estimation of human joint configuration, and to rehearse manoeuvres before working with people.</p>
         </div>
         <div class="repo-group">
           <h3 data-lang="es">Garras especializadas desacoplables</h3>
@@ -350,8 +352,11 @@
           <h3 data-lang="es">Control compartido</h3>
           <h3 data-lang="en">Shared control</h3>
           <ul class="repo-chips">
-            <li><span class="pending-tag" data-lang="es">sc_human_robot_joints (pendiente de hacerse público)</span><span class="pending-tag" data-lang="en">sc_human_robot_joints (pending public release)</span></li>
+            <li><a href="https://github.com/TaISLab/sc_ros_empathic">sc_ros_empathic</a></li>
+            <li><a href="https://github.com/TaISLab/sc_human_robot_joints">sc_human_robot_joints</a></li>
           </ul>
+          <p data-lang="es"><code>sc_ros_empathic</code> — implementación en ROS del sistema de control empático sobre la estación de trabajo del proyecto, con percepción visual y propioceptiva y manipulador colaborativo Franka FR3. <code>sc_human_robot_joints</code> — versión simulada, sin ROS, del mismo sistema, para evaluación de estrategias y ajuste de parámetros. Ambos son las dos versiones —experimental y simulada— del entregable E3.2 (sistema de control empático). El artículo que describe el método está en preparación.</p>
+          <p data-lang="en"><code>sc_ros_empathic</code> — ROS implementation of the empathic control system on the project's workstation, with visual and proprioceptive perception and a Franka FR3 collaborative manipulator. <code>sc_human_robot_joints</code> — simulated, ROS-free version of the same system, for evaluating strategies and tuning parameters. Both are the experimental and simulated versions of deliverable E3.2 (empathic control system). The paper describing the method is in preparation.</p>
         </div>
         <div class="repo-group">
           <h3>Datasets</h3>
