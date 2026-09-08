@@ -15,10 +15,10 @@ assets/img/           # carpeta reservada para fotos/vídeo del demostrador (vac
 ## Pendiente antes de publicar
 
 1. **Vídeo del demostrador** (entregable E5.3): hay un hueco reservado en la sección "Demostrador" (`#demostrador`) a la espera de grabarse.
-2. **Fotos del demostrador y prototipos**: añadir a `assets/img/` y sustituir los recuadros `.gallery-placeholder` en `index.html`, revisando que no se vea el rostro de ningún participante (protocolo CEUMA).
-3. **Repositorio `sc_human_robot_joints`**: aparece marcado como "pendiente de hacerse público"; convertir en enlace cuando se publique.
-4. **Comunidad Zenodo** del laboratorio: enlazar en la sección "Código y datos" cuando se cree.
-5. **URL definitiva**: `index.html` fija de momento `https://taislab.uma.es/projects/concerto` como URL canónica provisional (metaetiqueta `<link rel="canonical">` y `schema.org`/JSON-LD). Es la URL de ejemplo del documento de encargo; confirmarla o cambiarla **antes** de la justificación final (no debe cambiar después, se va a citar como evidencia ante la AEI).
+2. ~~Fotos del demostrador y prototipos~~ — hecho: ya hay 4 fotos reales en `assets/img/`, publicadas con autorización de las personas que aparecen.
+3. **Repositorio `sc_human_robot_joints`**: sigue marcado como "pendiente de hacerse público" en `index.html` (sección Código y datos). Convertir en enlace cuando se publique.
+4. ~~Comunidad Zenodo~~ — hecho: enlazada en la sección "Código y datos", con el primer dataset (DOI) y el dataset de Kaggle asociado.
+5. **URL definitiva**: `index.html` sigue fijando `https://taislab.uma.es/projects/concerto` como URL canónica provisional (metaetiqueta `<link rel="canonical">` y `schema.org`/JSON-LD), aunque la web ya está publicada de hecho en `https://taislab.github.io/PID2021/`. Decidir cuál es la URL definitiva y dejar solo esa **antes** de la justificación final (no debe cambiar después, se va a citar como evidencia ante la AEI).
 
 ## Publicar en GitHub Pages
 
