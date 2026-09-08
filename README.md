@@ -18,7 +18,7 @@ assets/img/           # carpeta reservada para fotos/vídeo del demostrador (vac
 2. ~~Fotos del demostrador y prototipos~~ — hecho: ya hay 4 fotos reales en `assets/img/`, publicadas con autorización de las personas que aparecen.
 3. **Repositorio `sc_human_robot_joints`**: sigue marcado como "pendiente de hacerse público" en `index.html` (sección Código y datos). Convertir en enlace cuando se publique.
 4. ~~Comunidad Zenodo~~ — hecho: enlazada en la sección "Código y datos", con el primer dataset (DOI) y el dataset de Kaggle asociado.
-5. **URL definitiva**: `index.html` sigue fijando `https://taislab.uma.es/projects/concerto` como URL canónica provisional (metaetiqueta `<link rel="canonical">` y `schema.org`/JSON-LD), aunque la web ya está publicada de hecho en `https://taislab.github.io/PID2021/`. Decidir cuál es la URL definitiva y dejar solo esa **antes** de la justificación final (no debe cambiar después, se va a citar como evidencia ante la AEI).
+5. ~~URL definitiva~~ — decidido: la web oficial es `https://taislab.github.io/PID2021/`, ya fijada en `index.html` (`<link rel="canonical">` y `schema.org`/JSON-LD).
 
 ## Publicar en GitHub Pages
 
