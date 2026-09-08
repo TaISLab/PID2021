@@ -163,11 +163,11 @@ html[data-active-lang="en"] li[data-lang="en"] { display: list-item !important; 
   margin-top: 1.75rem;
 }
 .institutional-logos img {
-  height: 56px;
+  height: 92px;
   width: auto;
   background: #fff;
-  border-radius: 8px;
-  padding: 6px 12px;
+  border-radius: 10px;
+  padding: 10px 18px;
 }
 
 /* Sections */
